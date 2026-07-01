@@ -1,7 +1,32 @@
+import profilePhotoAsset from '../assets/fotodev.jpg';
+import autonotiEntrada from '../assets/proyectos/autonoti/etnrada.png';
+import autonotiNotificaciones from '../assets/proyectos/autonoti/notificaciones.png';
+import autonotiRegistros from '../assets/proyectos/autonoti/registros.png';
+import lectorBetaiaScreen1 from '../assets/proyectos/lectorbetaai/Captura de pantalla 2026-06-14 231502.png';
+import lectorBetaiaScreen2 from '../assets/proyectos/lectorbetaai/Captura de pantalla 2026-06-15 002331.png';
+import lectorBetaiaScreen3 from '../assets/proyectos/lectorbetaai/Captura de pantalla 2026-06-15 004001.png';
+import lectorBetaiaScreen4 from '../assets/proyectos/lectorbetaai/Captura de pantalla 2026-06-15 004054.png';
+import lectorBetaiaScreen5 from '../assets/proyectos/lectorbetaai/IMG-20260625-WA0012.jpg';
+import mirrorSyncScreen1 from '../assets/proyectos/mirrorsync/Captura de pantalla 2026-06-27 001202.png';
+import mirrorSyncScreen2 from '../assets/proyectos/mirrorsync/Captura de pantalla 2026-06-27 002936.png';
+import mirrorSyncScreen3 from '../assets/proyectos/mirrorsync/Captura de pantalla 2026-06-27 011119.png';
+import mirrorSyncScreen4 from '../assets/proyectos/mirrorsync/Captura de pantalla 2026-06-27 014819.png';
+import myPocketScreen1 from '../assets/proyectos/mypocket/Screenshot_2026-03-10-03-33-45-957_com.example.my_pocket_flutter_android.jpg';
+import myPocketScreen2 from '../assets/proyectos/mypocket/Screenshot_2026-03-10-03-33-50-398_com.example.my_pocket_flutter_android.jpg';
+import myPocketScreen3 from '../assets/proyectos/mypocket/Screenshot_2026-03-10-03-34-14-978_com.example.my_pocket_flutter_android.jpg';
+import projectStudioScreen1 from '../assets/proyectos/projectostudio/Captura de pantalla 2026-05-10 130522.png';
+import projectStudioScreen2 from '../assets/proyectos/projectostudio/Captura de pantalla 2026-05-10 135204.png';
+import projectStudioScreen3 from '../assets/proyectos/projectostudio/IMG-20260625-WA0012.jpg';
+import pyStockScreen1 from '../assets/proyectos/PySotck/Captura de pantalla 2026-06-29 203506.png';
+import pyStockScreen2 from '../assets/proyectos/PySotck/Captura de pantalla 2026-06-29 203718.png';
+import pyStockScreen3 from '../assets/proyectos/PySotck/Captura de pantalla 2026-06-29 203742.png';
+import pyStockScreen4 from '../assets/proyectos/PySotck/Captura de pantalla 2026-06-29 203824.png';
+import saborUrbanoScreen1 from '../assets/proyectos/saborurbano/Captura de pantalla 2026-06-29 202358.png';
+import saborUrbanoScreen2 from '../assets/proyectos/saborurbano/Captura de pantalla 2026-06-29 202424.png';
+import saborUrbanoScreen3 from '../assets/proyectos/saborurbano/Captura de pantalla 2026-06-29 202448.png';
+import saborUrbanoScreen4 from '../assets/proyectos/saborurbano/Captura de pantalla 2026-06-29 202519.png';
 
-const asset = (path) => new URL(path, import.meta.url).href;
-
-export const profilePhoto = asset('../assets/fotodev.jpg');
+export const profilePhoto = profilePhotoAsset;
 
 export const heroData = {
   title: "Omar Darío Salcedo Solarte",
@@ -20,12 +45,7 @@ export const projectsData = [
     challenge: "Prevenir inconsistencias de saldos y lentitud en las consultas relacionales al gestionar miles de productos distribuidos en tiempo real de forma local.",
     solution: "Se estructuró una lógica transaccional optimizada que reduce los tiempos de escritura en disco y permite empaquetar el entorno completo en un ejecutable independiente (.exe) listo para producción.",
     architecture: "Motor de base de datos relacional local parametrizado con disparadores automáticos para detectar umbriles de desabastecimiento.",
-    images: [
-      asset('../assets/proyectos/PySotck/Captura de pantalla 2026-06-29 203506.png'),
-      asset('../assets/proyectos/PySotck/Captura de pantalla 2026-06-29 203718.png'),
-      asset('../assets/proyectos/PySotck/Captura de pantalla 2026-06-29 203742.png'),
-      asset('../assets/proyectos/PySotck/Captura de pantalla 2026-06-29 203824.png')
-    ],
+    images: [pyStockScreen1, pyStockScreen2, pyStockScreen3, pyStockScreen4],
     features: ["Facturación de remisiones integrada", "Panel analítico predictivo con gráficas de productos populares", "Alertas en tiempo real de stock bajo y sugerencias de reordenamiento"]
   },
   {
@@ -37,11 +57,7 @@ export const projectsData = [
     challenge: "Garantizar el procesamiento continuo y asíncrono de bases de datos masivas sin bloquear la interfaz gráfica del usuario.",
     solution: "Implementación de programación asíncrona mediante hilos de ejecución secundarios para gestionar las peticiones a la API rest de pruebas y flujos de mensajería.",
     architecture: "Almacenamiento y estructuración local que lee plantillas personalizadas y mapea los estados de los destinatarios.",
-    images: [
-      asset('../assets/proyectos/autonoti/etnrada.png'),
-      asset('../assets/proyectos/autonoti/notificaciones.png'),
-      asset('../assets/proyectos/autonoti/registros.png')
-    ],
+    images: [autonotiEntrada, autonotiNotificaciones, autonotiRegistros],
     features: ["Envío de notificaciones personalizadas automatizadas", "Alertas automatizadas de vencimientos críticos (SOAT, eventos)", "Módulo receptor asíncrono para captura automática de datos"]
   },
   {
@@ -53,12 +69,7 @@ export const projectsData = [
     challenge: "Crear una interfaz moderna y fluida que conecte los servicios externos de redes sociales y mensajería sin impactar la velocidad de carga.",
     solution: "Maquetación basada en componentes atómicos con Tailwind CSS v4, reduciendo el código redundante e integrando pasarelas livianas de comunicación.",
     architecture: "Estructura Single Page Application (SPA) optimizada para SEO con renderizado del lado del cliente.",
-    images: [
-      asset('../assets/proyectos/saborurbano/Captura de pantalla 2026-06-29 202358.png'),
-      asset('../assets/proyectos/saborurbano/Captura de pantalla 2026-06-29 202424.png'),
-      asset('../assets/proyectos/saborurbano/Captura de pantalla 2026-06-29 202448.png'),
-      asset('../assets/proyectos/saborurbano/Captura de pantalla 2026-06-29 202519.png')
-    ],
+    images: [saborUrbanoScreen1, saborUrbanoScreen2, saborUrbanoScreen3, saborUrbanoScreen4],
     features: ["Menú digital dinámico en alta fidelidad (PDF integrado)", "Sincronización con la API de Instagram para el feed de fotos en tiempo real", "Formulario de contacto automatizado con validación y envío de correo vía EmailJS"]
   },
   {
@@ -70,12 +81,7 @@ export const projectsData = [
     challenge: "Crear un algoritmo eficiente que emule el comportamiento de One Drive de forma local sin generar sobrecarga de lectura en el disco duro externo.",
     solution: "Desarrollo de un algoritmo basado en hashes lógicos que compara metadatos omitiendo los archivos idénticos que no han sufrido modificaciones.",
     architecture: "Proceso persistente (Daemon) controlado por SQLite para guardar el historial de sincronizaciones exitosas.",
-    images: [
-      asset('../assets/proyectos/mirrorsync/Captura de pantalla 2026-06-27 001202.png'),
-      asset('../assets/proyectos/mirrorsync/Captura de pantalla 2026-06-27 002936.png'),
-      asset('../assets/proyectos/mirrorsync/Captura de pantalla 2026-06-27 011119.png'),
-      asset('../assets/proyectos/mirrorsync/Captura de pantalla 2026-06-27 014819.png')
-    ],
+    images: [mirrorSyncScreen1, mirrorSyncScreen2, mirrorSyncScreen3, mirrorSyncScreen4],
     features: ["Copia de seguridad incremental con un solo clic", "Ejecución autónoma en segundo plano", "Detección activa de hardware que suspende hilos si la unidad de destino se desconecta"]
   },
   {
@@ -98,11 +104,7 @@ export const projectsData = [
     challenge: "Compilar librerías densas de Deep Learning y procesar el muestreo de voz sin entrar en conflictos de drivers de video en Windows.",
     solution: "Contenerización del entorno completo con Docker y mapeo directo de instrucciones CUDA hacia la tarjeta gráfica.",
     architecture: "Redes neuronales en PyTorch entrenadas para la extracción de vectores de identidad de voz.",
-    images: [
-      asset('../assets/proyectos/projectostudio/Captura de pantalla 2026-05-10 130522.png'),
-      asset('../assets/proyectos/projectostudio/Captura de pantalla 2026-05-10 135204.png'),
-      asset('../assets/proyectos/projectostudio/IMG-20260625-WA0012.jpg')
-    ],
+    images: [projectStudioScreen1, projectStudioScreen2, projectStudioScreen3],
     features: ["Clonación precisa de voces a partir de muestras de audio cortas", "Mantenimiento autónomo de tonos, pausas y variaciones naturales", "Versión demo funcional optimizada para la futura creación masiva de audiolibros"]
   },
   {
@@ -115,11 +117,11 @@ export const projectsData = [
     solution: "Diseño de un canal de comunicación asíncrono segmentado en fragmentos pequeños para que la IA procese la lectura en segundo plano.",
     architecture: "Frontend en Flutter/Dart conectado por sockets locales a un backend en Python con PyTorch.",
     images: [
-      asset('../assets/proyectos/lectorbetaai/Captura de pantalla 2026-06-14 231502.png'),
-      asset('../assets/proyectos/lectorbetaai/Captura de pantalla 2026-06-15 002331.png'),
-      asset('../assets/proyectos/lectorbetaai/Captura de pantalla 2026-06-15 004001.png'),
-      asset('../assets/proyectos/lectorbetaai/Captura de pantalla 2026-06-15 004054.png'),
-      asset('../assets/proyectos/lectorbetaai/IMG-20260625-WA0012.jpg')
+      lectorBetaiaScreen1,
+      lectorBetaiaScreen2,
+      lectorBetaiaScreen3,
+      lectorBetaiaScreen4,
+      lectorBetaiaScreen5
     ],
     features: ["Simulación de retroalimentación crítica simulando un lector humano", "Análisis estructural de arcos narrativos y coherencia de personajes", "Diseño responsivo compilado para entornos Windows y dispositivos móviles"]
   },
@@ -143,11 +145,7 @@ export const projectsData = [
     challenge: "Lograr una experiencia de usuario atractiva y fluida que incentive el registro diario de transacciones financieras sin comprometer la privacidad.",
     solution: "Desarrollo de un motor de gamificación interno acoplado a bases de datos relacionales ultra rápidas que se ejecutan directamente en la memoria del teléfono.",
     architecture: "Estructura móvil MVP Estable v3.2.5 con almacenamiento en SQLite local cifrado.",
-    images: [
-      asset('../assets/proyectos/mypocket/Screenshot_2026-03-10-03-33-45-957_com.example.my_pocket_flutter_android.jpg'),
-      asset('../assets/proyectos/mypocket/Screenshot_2026-03-10-03-33-50-398_com.example.my_pocket_flutter_android.jpg'),
-      asset('../assets/proyectos/mypocket/Screenshot_2026-03-10-03-34-14-978_com.example.my_pocket_flutter_android.jpg')
-    ],
+    images: [myPocketScreen1, myPocketScreen2, myPocketScreen3],
     features: ["Monitoreo estricto de suscripciones periódicas con alertas de cobro automatizadas", "Generación de reportes analíticos de gastos mensuales basados en data histórica previa", "Sistema interactivo de logros desbloqueables y personalización de temas dinámicos"]
   }
 ];
